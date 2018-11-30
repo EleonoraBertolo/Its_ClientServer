@@ -5,9 +5,9 @@ var mqtt = require('mqtt');
 var client = mqtt.connect('mqtt:\\\\test.mosquitto.org');
 
 client.on('connect', function(){
-    client.subscribe('presence/#', function (err) {
+    client.subscribe('kitt/auto/+/+', function (err) {
         if (!err) {
-          client.publish('presence/lvov', 'Hello mqtt');
+          client.publish('kitt/auto/targa/temperatura', 'BELLA RAGA 130 MARTIN GARRIX SI VOLAAAAAAAA');
         }
     })
 })
