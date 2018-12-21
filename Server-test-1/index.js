@@ -16,6 +16,10 @@ client.on('message', function (topic, message) {
     // message is Buffer
     console.log(message.toString());
     console.log(topic.toString());
+
+    if (topic.includes('/')) {
+        
+    }
     //client.end()
 })
 
