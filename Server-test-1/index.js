@@ -1,3 +1,22 @@
+// API CoAP
+
+var coap        = require('coap');
+var server      = coap.createServer();
+
+server.on('request', function(req, res) {
+  console.log('Arrivata una richiesta\nMessaggio: ' + req.payload.toString() 
+  //+ '\nID: ' + res
+  +'\n');
+  //console.log(req);
+  res.end('Hello ' + req.url.split('/')[1] + '\n');
+})
+
+// the default CoAP port is 5683
+server.listen(function() {
+})
+
+
+/*
 // API MQTT
 
 var mqtt = require('mqtt');
@@ -22,6 +41,7 @@ client.on('message', function (topic, message) {
     }
     //client.end()
 })
+*/
 
 /*
 // API HTML
