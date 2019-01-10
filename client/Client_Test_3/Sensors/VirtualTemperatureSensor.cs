@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Client.Sensors
 {
-    class VirtualTemperatureSensor : TemperatureSensorInterface
+    class VirtualTemperatureSensor : TemperatureSensorInterface, SensorInterface
     {
         public void setTemperature(decimal temperature)
         { }
@@ -18,7 +18,7 @@ namespace Client.Sensors
 
         public string toJson()
         {
-            return "{\"temperature\":\"" + getTemperature() + "\"}";
+            return "{\"temperature\": " + getTemperature() + "}";
         }
     }
 }
