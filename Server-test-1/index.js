@@ -1,29 +1,3 @@
-// API MQTT
-
-var mqtt = require('mqtt');
-
-var client = mqtt.connect('mqtt:\\\\test.mosquitto.org');
-
-client.on('connect', function(){
-    client.subscribe('kitt/auto/+/+', function (err) {
-        if (!err) {
-          client.publish('kitt/auto/targa/temperatura', 'BELLA RAGA 130 MARTIN GARRIX SI VOLAAAAAAAA');
-        }
-    })
-})
-    
-client.on('message', function (topic, message) {
-    // message is Buffer
-    console.log(message.toString());
-    console.log(topic.toString());
-
-    if (topic.includes('/')) {
-        
-    }
-    //client.end()
-})
-
-/*
 // API HTML
 
 //var restify = require('restify');
@@ -69,4 +43,3 @@ server.name = "Italo-PC";
 server.listen(8080, function() {
     console.log('%s listening at %s', server.name, server.url);
 });
- */
