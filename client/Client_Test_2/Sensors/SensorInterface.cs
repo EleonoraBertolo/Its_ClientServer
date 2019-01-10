@@ -5,10 +5,8 @@ using System.Text;
 
 namespace Client.Sensors
 {
-    interface TemperatureSensorInterface
+    interface SensorInterface
     {
-        void setTemperature(decimal temperature);
-        decimal getTemperature();
         string toJson();
     }
 }

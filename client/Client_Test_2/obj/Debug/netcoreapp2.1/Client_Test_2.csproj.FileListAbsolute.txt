@@ -1,0 +1,11 @@
+C:\Users\utente\source\repos\Client_Test_2\Client_Test_2\bin\Debug\netcoreapp2.1\Client_Test_2.deps.json
+C:\Users\utente\source\repos\Client_Test_2\Client_Test_2\bin\Debug\netcoreapp2.1\Client_Test_2.runtimeconfig.json
+C:\Users\utente\source\repos\Client_Test_2\Client_Test_2\bin\Debug\netcoreapp2.1\Client_Test_2.runtimeconfig.dev.json
+C:\Users\utente\source\repos\Client_Test_2\Client_Test_2\bin\Debug\netcoreapp2.1\Client_Test_2.dll
+C:\Users\utente\source\repos\Client_Test_2\Client_Test_2\obj\Debug\netcoreapp2.1\Client_Test_2.csprojAssemblyReference.cache
+C:\Users\utente\source\repos\Client_Test_2\Client_Test_2\obj\Debug\netcoreapp2.1\Client_Test_2.csproj.CoreCompileInputs.cache
+C:\Users\utente\source\repos\Client_Test_2\Client_Test_2\obj\Debug\netcoreapp2.1\Client_Test_2.AssemblyInfoInputs.cache
+C:\Users\utente\source\repos\Client_Test_2\Client_Test_2\obj\Debug\netcoreapp2.1\Client_Test_2.AssemblyInfo.cs
+C:\Users\utente\source\repos\Client_Test_2\Client_Test_2\bin\Debug\netcoreapp2.1\Client_Test_2.pdb
+C:\Users\utente\source\repos\Client_Test_2\Client_Test_2\obj\Debug\netcoreapp2.1\Client_Test_2.dll
+C:\Users\utente\source\repos\Client_Test_2\Client_Test_2\obj\Debug\netcoreapp2.1\Client_Test_2.pdb
