@@ -1,0 +1,11 @@
+C:\Users\utente\source\repos\Client_test_1\Client_test_1\obj\Debug\netcoreapp2.1\Client_test_1.csprojAssemblyReference.cache
+C:\Users\utente\source\repos\Client_test_1\Client_test_1\obj\Debug\netcoreapp2.1\Client_test_1.csproj.CoreCompileInputs.cache
+C:\Users\utente\source\repos\Client_test_1\Client_test_1\obj\Debug\netcoreapp2.1\Client_test_1.AssemblyInfoInputs.cache
+C:\Users\utente\source\repos\Client_test_1\Client_test_1\obj\Debug\netcoreapp2.1\Client_test_1.AssemblyInfo.cs
+C:\Users\utente\source\repos\Client_test_1\Client_test_1\bin\Debug\netcoreapp2.1\Client_test_1.deps.json
+C:\Users\utente\source\repos\Client_test_1\Client_test_1\bin\Debug\netcoreapp2.1\Client_test_1.runtimeconfig.json
+C:\Users\utente\source\repos\Client_test_1\Client_test_1\bin\Debug\netcoreapp2.1\Client_test_1.runtimeconfig.dev.json
+C:\Users\utente\source\repos\Client_test_1\Client_test_1\bin\Debug\netcoreapp2.1\Client_test_1.dll
+C:\Users\utente\source\repos\Client_test_1\Client_test_1\bin\Debug\netcoreapp2.1\Client_test_1.pdb
+C:\Users\utente\source\repos\Client_test_1\Client_test_1\obj\Debug\netcoreapp2.1\Client_test_1.dll
+C:\Users\utente\source\repos\Client_test_1\Client_test_1\obj\Debug\netcoreapp2.1\Client_test_1.pdb
