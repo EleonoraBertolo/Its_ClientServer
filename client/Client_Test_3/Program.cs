@@ -14,7 +14,7 @@ namespace Client_Test_3
             sensors.Add(new VirtualPositionSensor());
             string targa = "ab123cd";
 
-            var client = new CoapClient(new Uri("coap://192.168.101.33/kitt/auto/ "+targa+" / tipo_sensore"));
+            var client = new CoapClient(new Uri("coap://192.168.101.116/kitt/auto/ "+targa+" / tipo_sensore"));
             Request request;
             Response response;
 
@@ -27,7 +27,7 @@ namespace Client_Test_3
                     request = new Request(Method.POST);
                     request.Token = new byte[2];
                     request.URI = client.Uri;
-                    request.SetPayload($"data from client {i}");
+                    request.SetPayload(sensor.toJson());
 
                     request.ID = i;
                     request.Token[0] = Convert.ToByte(i);
