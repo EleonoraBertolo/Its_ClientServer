@@ -1,23 +1,52 @@
 // API AMQP
 var amqp = require('amqplib/callback_api');
+var amqp2 = require('amqplib/callback_api');
 var hostname = 'amqp://vdznsexb:3gE_psy4Q32UB1hgzyOy1-ovSt7vHmUr@golden-kangaroo.rmq.cloudamqp.com/vdznsexb';
 
 amqp.connect(hostname, function(err, conn) {
     // Si connette e si assicura che esista il server
-  conn.createChannel(function(err, channel) {
-    var q = 'hello';
+    conn.createChannel(function(err, channel) {
+        var ex = 'logs';
 
-    channel.assertQueue(q, {durable: false});
+        channel.assertExchange(ex, 'fanout' , {durable: false});
+        channel.assertQueue('', {exclusive: true}, function(err, q) {
+            console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", q.queue);
+            channel.bindQueue(q.queue, ex, '');
 
-    // Aspetta i messaggi
-    console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", q);
-    setTimeout(() => {
-        channel.consume(q, function(msg) {
-            console.log(" [x] Received %s in hello ", msg.content.toString());
-            }, {noAck: true});
-    }, 2000);
-  });
+        // Aspetta i messaggi
+            setTimeout(() => {
+                channel.consume(q.queue, function(msg) {
+                    if(msg.content) {
+                        console.log(" [x] %s", msg.content.toString());
+                    }
+                }, {noAck: true});
+            }, 2000);
+        });
+    });
 });
+
+amqp2.connect(hostname, function(err, conn) {
+    // Si connette e si assicura che esista il server
+    conn.createChannel(function(err, channel) {
+        var ex = 'logs';
+
+        channel.assertExchange(ex, 'fanout' , {durable: false});
+        channel.assertQueue('', {exclusive: true}, function(err, q) {
+            console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", q.queue);
+            channel.bindQueue(q.queue, ex, '');
+
+        // Aspetta i messaggi
+            setTimeout(() => {
+                channel.consume(q.queue, function(msg) {
+                    if(msg.content) {
+                        console.log(" [x] %s - Second receiver", msg.content.toString());
+                    }
+                }, {noAck: true});
+            }, 2000);
+        });
+    });
+});
+
 
 /*
 // API CoAP
