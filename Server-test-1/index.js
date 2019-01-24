@@ -3,8 +3,8 @@ var amqp = require('amqplib/callback_api');
 var amqp2 = require('amqplib/callback_api');
 var hostname = 'amqp://vdznsexb:3gE_psy4Q32UB1hgzyOy1-ovSt7vHmUr@golden-kangaroo.rmq.cloudamqp.com/vdznsexb';
 
+// Queue 1: riceve messaggi in fanout
 amqp.connect(hostname, function(err, conn) {
-    // Si connette e si assicura che esista il server
     conn.createChannel(function(err, channel) {
         var ex = 'logs';
 
@@ -25,6 +25,7 @@ amqp.connect(hostname, function(err, conn) {
     });
 });
 
+// Queue 2: riceve messaggi in fanout
 amqp2.connect(hostname, function(err, conn) {
     // Si connette e si assicura che esista il server
     conn.createChannel(function(err, channel) {
