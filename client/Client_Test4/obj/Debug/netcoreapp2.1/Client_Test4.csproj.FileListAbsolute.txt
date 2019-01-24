@@ -1,0 +1,11 @@
+C:\Users\utente\source\repos\Client_Test4\Client_Test4\bin\Debug\netcoreapp2.1\Client_Test4.deps.json
+C:\Users\utente\source\repos\Client_Test4\Client_Test4\bin\Debug\netcoreapp2.1\Client_Test4.runtimeconfig.json
+C:\Users\utente\source\repos\Client_Test4\Client_Test4\bin\Debug\netcoreapp2.1\Client_Test4.runtimeconfig.dev.json
+C:\Users\utente\source\repos\Client_Test4\Client_Test4\bin\Debug\netcoreapp2.1\Client_Test4.dll
+C:\Users\utente\source\repos\Client_Test4\Client_Test4\obj\Debug\netcoreapp2.1\Client_Test4.csprojAssemblyReference.cache
+C:\Users\utente\source\repos\Client_Test4\Client_Test4\obj\Debug\netcoreapp2.1\Client_Test4.csproj.CoreCompileInputs.cache
+C:\Users\utente\source\repos\Client_Test4\Client_Test4\obj\Debug\netcoreapp2.1\Client_Test4.AssemblyInfoInputs.cache
+C:\Users\utente\source\repos\Client_Test4\Client_Test4\obj\Debug\netcoreapp2.1\Client_Test4.AssemblyInfo.cs
+C:\Users\utente\source\repos\Client_Test4\Client_Test4\bin\Debug\netcoreapp2.1\Client_Test4.pdb
+C:\Users\utente\source\repos\Client_Test4\Client_Test4\obj\Debug\netcoreapp2.1\Client_Test4.dll
+C:\Users\utente\source\repos\Client_Test4\Client_Test4\obj\Debug\netcoreapp2.1\Client_Test4.pdb
